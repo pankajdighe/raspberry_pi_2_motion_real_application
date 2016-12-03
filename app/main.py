@@ -12,7 +12,7 @@ mqttc.loop_start()
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(11, GPIO.IN)
 
-#read temperature
+#read temperature sfs
 def read_motion_data():
 	current_state = GPIO.input(11)
 	if current_state == 1:
